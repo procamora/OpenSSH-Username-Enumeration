@@ -38,10 +38,6 @@ docker volume create --name data-45233
 docker build -t app-45233 .
 # Execute image
 docker run -it --rm -v data-45233:/usr/src/app:rw app-45233
-
-# 
-# 
-# 
 ```
 
 The volume directory where the dictionary is located should be _/var/lib/docker/volumes/data-45233/_data/_ although it can be checked with the following command
