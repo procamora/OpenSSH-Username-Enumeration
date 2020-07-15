@@ -10,9 +10,9 @@ WORKDIR /usr/src/app
 
 COPY requirements.txt ./
 COPY 45233.py ./
-COPY juan.lst ./
+COPY dict.txt ./
 
 RUN pip install -r requirements.txt
 
 
-CMD [ "python", "./45233.py", "10.10.10.4", "--outputFile", "file.txt", "--userList", "juan.lst"]
+CMD [ "python", "./45233.py", "10.10.10.181", "--outputFile", "./file.txt", "--userList", "./dict.txt"]

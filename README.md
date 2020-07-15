@@ -46,3 +46,18 @@ The volume directory where the dictionary is located should be _/var/lib/docker/
 ```bash
 docker volume inspect data-45233
 ```
+
+
+# Virtualenv
+
+```bash
+virtualenv -p /usr/bin/python2.7 venv
+source venv/bin/activate
+python -V
+pip install -r requirements.txt
+python ./45233.py 10.10.10.181 --outputFile file.txt --userList dict.txt
+```
+
+
+
+
